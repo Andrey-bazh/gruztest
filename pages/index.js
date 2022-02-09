@@ -22,6 +22,14 @@ export default function Page({ id, options, count, color, data }) {
 		</MyWonderfulComponent>
 	)
 }
+MyWonderfulComponent.propTypes = {
+	id: PropTypes.number,
+	options: PropTypes.object,
+	count: PropTypes.number,
+	color: PropTypes.string,
+	data: PropTypes.object,
+	text: PropTypes.string,
+}
 
 function MyWonderfulComponent({ id, options, children, ...other }) {
 	const { count } = other
